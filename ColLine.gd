@@ -35,8 +35,8 @@ func _process(delta: float) -> void:
 	if not started:
 		_ready()
 	if lastLine != self.points:
-		recomputeRect()
 		lastLine=self.points
+		recomputeRect()
 			
 func recomputeRect() -> void:
 	# remove all the unneeded rects
